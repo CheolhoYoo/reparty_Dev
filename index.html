@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+    <script type="text/javascript">
+        function makePage() {
+            for (var i = 1; i < 10; i++) {
+                var myChild = document.createElement("div");
+                var myDiv = document.getElementById("myCount");                
+                myChild.appendChild(document.createTextNode("Number: " + i));                               
+                myDiv.appendChild(myChild);
+            }        
+        }    
+</script>
+    <title>Dynamic page sample</title>
+</head>
+<body onload="makePage();">
+<h1>Dynamic page sample</h1>
+<div id="myCount"></div>
+</body>
+</html>
